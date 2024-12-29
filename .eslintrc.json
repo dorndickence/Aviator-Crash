@@ -1,5 +1,34 @@
+
 {
+  "parser": "@typescript-eslint/parser",  // Use the TypeScript parser
+  "parserOptions": {
+    "ecmaVersion": 2020,                  // Support modern JavaScript features
+    "sourceType": "module",               // Allow import/export syntax
+    "ecmaFeatures": {
+      "jsx": true                          // Enable JSX parsing
+    }
+  },
+  "plugins": [
+    "react",                             // React plugin for React-specific linting rules
+    "react-hooks",                       // React hooks plugin for hooks linting rules
+    "@typescript-eslint"                 // TypeScript plugin for TypeScript linting rules
+  ],
+  "extends": [
+    "eslint:recommended",                // Use ESLint's recommended rules
+    "plugin:react/recommended",          // Use the recommended React rules
+    "plugin:react-hooks/recommended",    // Use the recommended React hooks rules
+    "plugin:@typescript-eslint/recommended"  // Use the recommended TypeScript rules
+  ],
   "rules": {
-    "@typescript-eslint/no-unused-vars": "off"  // Disable the rule globally
+    "@typescript-eslint/no-unused-vars": "off",
+       "react-hooks/exhaustive-deps": "warn",         // Enable the exhaustive-deps rule for React hooks (warn instead of error)
+    "react/prop-types": "off",                     // Disable prop-types as you're using TypeScript
+    "react/jsx-uses-react": "off",                 // Disable unused React import warning (React 17+ doesn't need it)
+    "react/jsx-uses-vars": "warn"                 // Warn if JSX variables are unused
+  },
+  "settings": {
+    "react": {
+      "version": "detect"  // Automatically detect the React version
+    }
   }
 }
