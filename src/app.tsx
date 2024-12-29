@@ -6,7 +6,7 @@ import Header from "./components/Header";
 import BetsUsers from "./components/BetUsers";
 import Main from "./components/Main";
 
-import MainAudio from "./assets/audio/main.wav";
+//import MainAudio from "./assets/audio/main.wav";
 import FlewAwayAudio from "./assets/audio/flew_away.mp3";
 import TakeOffAudio from "./assets/audio/take_off.mp3";
 
