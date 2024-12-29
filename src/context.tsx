@@ -49,7 +49,7 @@ export const callCancelBet = (userId: string, betid: string, betAmount: any, cur
 let fIncreaseAmount = 0;
 let fDecreaseAmount = 0;
 let sIncreaseAmount = 0;
-let sDecreaseAmount = 0;
+//let sDecreaseAmount = 0;
 
 let newState: ContextDataType;
 let newUserState: UserStatusType = {
