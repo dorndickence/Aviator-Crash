@@ -1,4 +1,3 @@
-declare module 'avatar1.png';
-declare module '01.svg';
+declare module '*.png';
+declare module '*.svg';
 
-export {};
