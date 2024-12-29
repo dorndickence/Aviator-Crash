@@ -1,5 +1,4 @@
-/*declare module '*.png';
-declare module '*.svg';
+declare module 'Avatar1.png';
+declare module '01.svg';
 
 export {};
-*/
